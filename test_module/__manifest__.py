@@ -1,34 +1,22 @@
 # -*- coding: utf-8 -*-
 {
     'name': "test_module",
-
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
-
+    'summary': "Module de test avec page web et formulaire de contact",
     'description': """
-Long description of module's purpose
-    """,
+Ce module ajoute une page web personnalisée avec un formulaire de contact.
+""",
+    'author': "AyaDelRey",
+    'website': "https://github.com/AyaDelRey",
+    'category': 'Website',
+    'version': '1.0',
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'depends': ['base', 'website'],  # ajoute 'website' pour activer le builder
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-
-    # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'demo': [],
+    'application': True,
+    'installable': True,
 }
-
