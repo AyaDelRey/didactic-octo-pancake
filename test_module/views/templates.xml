@@ -7,7 +7,7 @@
         <form action="/contact_submit" method="POST">
           <input type="text" name="nom" placeholder="Votre nom"/>
           <input type="email" name="email" placeholder="Votre email"/>
-          <button type="submit">Envoyer</button>
+          <button type="submit">Envoyer SVP</button>
         </form>
       </section>
     </xpath>
