@@ -10,6 +10,9 @@
           <button type="submit">Envoyer SVP</button>
         </form>
       </section>
+      <div style="text-align:center; padding: 10px; font-size: 0.9em; color: #777;">
+  <i class="fa fa-code"></i> Made by <a href="https://covaltis.com" target="_blank" style="color:#555; text-decoration:none;">Covaltis</a>
+</div>
     </xpath>
   </template>
 </odoo>
