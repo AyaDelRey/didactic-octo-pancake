@@ -10,13 +10,16 @@ Ce module ajoute une page web personnalisée avec un formulaire de contact.
     'category': 'Website',
     'version': '1.0',
 
-    'depends': ['base', 'website'],  # ajoute 'website' pour activer le builder
+    'depends': ['base', 'website', 'purchase'],
 
     'data': [
         'views/views.xml',
         'views/templates.xml',
+        'views/purchase_order_views.xml'
+        
     ],
     'demo': [],
     'application': True,
     'installable': True,
 }
+

@@ -1,16 +1,16 @@
 <odoo>
-    <record id="view_purchase_order_form_inherit" model="ir.ui.view">
-        <field name="name">purchase.order.form.inherit.export.edi</field>
+    <record id="view_purchase_order_form_inherit_edi" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.edi</field>
         <field name="model">purchase.order</field>
         <field name="inherit_id" ref="purchase.purchase_order_form"/>
         <field name="arch" type="xml">
             <header>
                 <button name="export_to_edi"
+                        string="Exporter EDI"
                         type="object"
-                        string="Exporter en EDI"
-                        class="oe_highlight"/>
+                        class="btn-primary"
+                        />
             </header>
         </field>
     </record>
 </odoo>
-<!-- This code adds a button to the purchase order form view that allows users to export the order to EDI format. -->
